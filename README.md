@@ -2,16 +2,22 @@
 Some programs of thesis uesd for flow traceback
 
 ## 1 flow statistic 
-run the `flow.p4` to collect the flow info 
+### step 0：run the `flow.p4` to config the P4 switch 
 ```
 P4@P4: cd/flow
 P4@P4: make
 ```
+### step 1：run the `flowtest.py` to generate the test flow  
 run the `flowtest.py`
+```
+P4@P4:./flowtest.py n
+```
+### step 2：run the `holt.py` to predict the flow statistic
 ```
 ./holt.py
 ```
-## 2 traceback
+
+## 2 flow traceback
 `terminal` 1
 ```
 P4@P4: cd/traceroute
