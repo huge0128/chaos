@@ -18,7 +18,7 @@ P4@P4: cd/traceroute
 P4@P4: make
 mininet> xterm h4 h2
 ```
-xterm 
+`xterm`
 ```
 root@P4: ./receive.py
 ```
@@ -26,13 +26,13 @@ root@P4: ./receive.py
 root@P4: ./send.py 10.0.2.2 "come from h4" n
 ```
 
-terminal 2
+`terminal` 2
 ```
 P4@P4: cd/fragment
 P4@P4: make
 mininet> xterm h4 h2
 ```
-xterm 
+`xterm` 
 ```
 root@P4: ./receive.py
 ```
@@ -88,20 +88,20 @@ got a packet
 
 
 ## 3 Smart Contract
-generate the testnet of blockcahin in cache
+generate the testnet of blockcahin in cache by `ganache-cli`
 ```
 P4@P4:ganache-cli -q
 ```
 
-terminal 1 deploy the contracts 
+`terminal` 1 deploy the contracts by javascript 
 ```
 P4@P4: node deploy.js
 ```
-terminal 2 call the contracts 
+`terminal` 2 call the contracts 
 ```
 P4@P4: node call.js
 ```
-terminal 3 get the event based logs 
+`terminal` 3 get the event based logs 
 ```
 P4@P4: cd/eth/dapptest/ddostest/ddosdapp
 P4@P4: ~/eth/dapptest/ddostest/ddosdapp$ npm start
