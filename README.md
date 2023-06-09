@@ -18,12 +18,14 @@ P4@P4:./flowtest.py n
 ```
 
 ## 2 flow traceback
+### step 0：run the `traceroute.p4` to config the P4 switch with p4 info and json
 `terminal` 1
 ```
 P4@P4: cd/traceroute
 P4@P4: make
 mininet> xterm h4 h2
 ```
+### step 1：run the `receive.py` to receive the test flow  
 `xterm`
 ```
 root@P4: ./receive.py
