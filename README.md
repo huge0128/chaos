@@ -2,17 +2,17 @@
 Some programs of thesis uesd for flow traceback
 
 ## 1 flow statistic 
-run the flow.p4 to collect the flow info 
+run the `flow.p4` to collect the flow info 
 ```
 P4@P4: cd/flow
 P4@P4: make
 ```
-run the flowtest.py
+run the `flowtest.py`
 ```
 ./holt.py
 ```
 ## 2 traceback
-terminal 1
+`terminal` 1
 ```
 P4@P4: cd/traceroute
 P4@P4: make
